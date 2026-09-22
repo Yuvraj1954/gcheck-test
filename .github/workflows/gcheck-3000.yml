@@ -1,0 +1,17 @@
+name: gcheck-3000
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Run basic checks
+        run: |
+          echo "Running gcheck-3000..."
+          echo "Repository is accessible"
+          echo "Workflow infrastructure is working"
